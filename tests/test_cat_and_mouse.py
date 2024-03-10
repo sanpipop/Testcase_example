@@ -32,5 +32,11 @@ class CatAndMouseTest(unittest.TestCase):
     def test_catA1_catB1_mouseC1(self):
         result = cat_and_mouse(1, 1, 1)
         self.assertEqual(result, "Mouse C")
+    def test_catA1_catB1_mouseC10(self):
+        result = cat_and_mouse(1, 1, 10)
+        self.assertEqual(result, "Mouse C")
+    def test_catA1_catB10_mouseC10(self):
+        result = cat_and_mouse(1, 10, 10)
+        self.assertEqual(result, "Cat B")
 
 
